@@ -576,23 +576,77 @@ export const projects: Project[] = [
 
   // ───────────────────────── ARTIFICIAL INTELLIGENCE ─────────────────────────
   {
-    id: 'careeriq',
+    id: 'agentic-ai-assistant',
     domain: 'artificial-intelligence',
     subcategory: 'LLM Projects',
-    title: 'CareerIQ',
-    tagline: 'AI-powered career intelligence and placement-readiness platform.',
-    overview: 'CareerIQ is a full-stack platform for students, colleges, and recruiters in India — combining an AI resume-intelligence pipeline with readiness scoring, mock interviews, and market-trend data.',
-    problem: 'Students lack visibility into how placement-ready they actually are, and recruiters struggle to screen resumes at scale against real skill taxonomies.',
-    solution: 'Built a 20-table Supabase database seeded with Indian-context data, a FastAPI backend, and a React/TypeScript frontend with dedicated dashboards for students, colleges, and recruiters — powered by a custom resume-intelligence pipeline (PDF extraction, section parsing, and taxonomy-driven skill extraction).',
-    workflow: ['Designed a 20-table Supabase schema seeded with ~1.9M rows of Indian-context data', 'Built the FastAPI backend with SQLAlchemy models and JWT auth', 'Built the React + TypeScript + Tailwind frontend across student, college, and recruiter dashboards', 'Built an AI resume pipeline: PyMuPDF extractor, text cleaner, section parser, taxonomy-driven skill extractor, orchestrator', 'Evaluated the pipeline against a ground-truth set with precision/recall/F1'],
-    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'FastAPI', 'SQLAlchemy', 'Supabase (PostgreSQL)', 'PyMuPDF'],
-    features: ['Student readiness-score dashboard', 'College and recruiter dashboards', 'AI resume intelligence pipeline with ~60 heading aliases', 'Taxonomy-driven skill extraction across tech and non-tech domains', 'Mock interview and market-trend modules'],
-    challenges: ['Image-only PDF resumes required deferred OCR handling', 'Skill taxonomy initially under-covered non-CS roles like HR, design, and finance — expanded taxonomy to close the gap'],
-    results: ['20-table production schema seeded with Indian-context data', 'Resume pipeline validated on a 20-resume batch test with a precision/recall/F1 evaluation framework'],
-    meta: [{ label: 'DB Tables', value: '20' }, { label: 'Seed Rows', value: '~1.9M' }, { label: 'Stack', value: 'React + FastAPI + Supabase' }],
-    github: 'https://github.com/panKhushi',
-    image: '/projects/placeholder.svg',
-    featured: true,
+    title: 'Agentic AI Assistant',
+     tagline: 'An AI assistant with intelligent tool calling for real-world task automation.',
+
+  overview:
+    'Built an agentic AI assistant using Python, Groq LLM, and Streamlit. The assistant understands user intent, invokes external tools automatically, and generates contextual responses. It supports mathematical calculations, live weather information, current date and time retrieval, PDF generation, and PowerPoint presentation creation.',
+
+  problem:
+    'Traditional chatbots only generate text and cannot execute real-world actions such as creating documents or retrieving live information.',
+
+  solution:
+    'Developed a modular AI agent capable of selecting and executing specialized tools through structured JSON-based function calling. The architecture separates reasoning from execution, enabling scalable tool integration.',
+
+  workflow: [
+    'Receive user query',
+    'Analyze intent using Groq LLM',
+    'Parse structured tool request',
+    'Execute the appropriate tool',
+    'Return tool output to the LLM',
+    'Generate the final conversational response'
+  ],
+
+  techStack: [
+    'Python',
+    'Groq API',
+    'LLM',
+    'Streamlit',
+    'Prompt Engineering',
+    'REST API',
+    'Requests',
+    'ReportLab',
+    'python-pptx',
+    'JSON'
+  ],
+
+  features: [
+    'Automatic tool selection',
+    'Mathematical calculations',
+    'Real-time weather lookup',
+    'Current date and time retrieval',
+    'PDF report generation',
+    'PowerPoint presentation generation',
+    'Conversation memory',
+    'Interactive Streamlit interface'
+  ],
+
+  challenges: [
+    'Designing reliable JSON tool parsing',
+    'Avoiding circular imports in the tool architecture',
+    'Maintaining conversation memory',
+    'Building an extensible modular tool registry'
+  ],
+
+  results: [
+    'Successfully integrated multiple AI tools into a single assistant',
+    'Automated PDF and PowerPoint generation',
+    'Improved modularity with a scalable tool registry',
+    'Delivered an interactive AI assistant through Streamlit'
+  ],
+
+  meta: [
+    { label: 'LLM', value: 'Groq Llama 3.3' },
+    { label: 'Tools', value: '5' },
+    { label: 'Frontend', value: 'Streamlit' }
+  ],
+
+  github: 'https://github.com/panKhushi/AgenticAI',
+  image: '/projects/agentic-ai.jpg',
+  featured: true,
   },
   {
     id: 'ai-resume-analyzer',
