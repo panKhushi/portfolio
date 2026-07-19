@@ -190,24 +190,68 @@ export const projects: Project[] = [
     image: '/projects/placeholder.svg',
   },
   {
-    id: 'blinkit-powerbi-dashboard',
-    domain: 'data-analytics',
-    subcategory: 'Dashboards',
-    title: 'Blinkit Sales Dashboard',
-    tagline: 'A quick-commerce sales and inventory dashboard.',
-    overview: 'A Power BI dashboard analyzing order volume, delivery performance, and category-level sales for a quick-commerce style dataset.',
-    problem: 'Needed a clear view of order and delivery performance trends across categories and time.',
-    solution: 'Built a Power BI report with delivery-time distributions, category sales breakdowns, and order-volume trend lines.',
-    workflow: ['Modeled orders, products, and delivery data', 'Built delivery-time distribution visuals', 'Built category-level sales breakdowns'],
-    techStack: ['Power BI', 'DAX', 'Power Query'],
-    features: ['Delivery-time distribution analysis', 'Category-level sales breakdown', 'Order-volume trend tracking'],
-    challenges: ['Modeling delivery-time data with outliers skewing averages'],
-    results: ['Portfolio piece demonstrating end-to-end BI modeling and storytelling'],
-    meta: [{ label: 'Focus', value: 'Quick-commerce' }],
-    github: 'https://github.com/panKhushi',
-    image: '/projects/placeholder.svg',
-    featured: true,
-  },
+  id: 'blinkit-powerbi-dashboard',
+  domain: 'data-analytics',
+  subcategory: 'Business Intelligence',
+  title: 'Blinkit Sales & Performance Dashboard',
+  tagline: 'Interactive Power BI dashboard for sales, customer, and delivery insights.',
+
+  overview:
+    'Designed an interactive Power BI dashboard to analyze Blinkit sales, delivery performance, customer purchasing behavior, and product trends. The dashboard enables data-driven decision making through dynamic KPIs and visual analytics.',
+
+  problem:
+    'Business stakeholders lacked a centralized dashboard to monitor sales performance, customer demand, delivery efficiency, and product category insights in real time.',
+
+  solution:
+    'Developed a Power BI dashboard using Power Query for data transformation and DAX for KPI calculations. Created interactive visualizations to monitor revenue, order trends, delivery performance, and category-wise sales.',
+
+  workflow: [
+    'Cleaned and transformed raw sales data using Power Query',
+    'Created a star schema data model',
+    'Developed DAX measures and calculated KPIs',
+    'Designed interactive dashboards with slicers and drill-through',
+    'Validated insights and optimized report performance'
+  ],
+
+  techStack: [
+    'Power BI',
+    'Power Query',
+    'DAX',
+    'Excel'
+  ],
+
+  features: [
+    'Sales KPI Dashboard',
+    'Revenue & Order Trend Analysis',
+    'Category-wise Sales Performance',
+    'Top Products Analysis',
+    'Delivery Performance Metrics',
+    'Interactive Filters & Drill-through',
+    'Customer Purchase Insights'
+  ],
+
+  challenges: [
+    'Handled missing and inconsistent data during preprocessing',
+    'Optimized DAX measures for faster report performance',
+    'Designed a scalable data model for efficient filtering'
+  ],
+
+  results: [
+    'Built a fully interactive business intelligence dashboard',
+    'Provided actionable insights into sales and delivery performance',
+    'Demonstrated expertise in Power BI, DAX, data modeling, and dashboard storytelling'
+  ],
+
+  meta: [
+    { label: 'Domain', value: 'Retail Analytics' },
+    { label: 'Tool', value: 'Power BI' },
+    { label: 'Dataset', value: 'Blinkit Sales' }
+  ],
+
+  github: 'https://github.com/panKhushi/Blinkit-Sales-Dashboard',
+  image: '/projects/blinkit sales.png',
+  featured: true,
+}
   {
     id: 'hr-dashboard-powerbi',
     domain: 'data-analytics',
