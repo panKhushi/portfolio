@@ -249,9 +249,8 @@ export const projects: Project[] = [
   ],
 
   github: 'https://github.com/panKhushi/Blinkit-Sales-Dashboard',
-  image: '/projects/blinkit sales.png',
-  featured: true,
-}
+  image: '/projects/blinkit-sales.jpg',
+  featured: true,},
   {
     id: 'hr-dashboard-powerbi',
     domain: 'data-analytics',
