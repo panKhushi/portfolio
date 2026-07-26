@@ -252,23 +252,76 @@ export const projects: Project[] = [
   image: '/projects/blinkit-sales.jpg',
   featured: true,},
   {
-    id: 'hr-dashboard-powerbi',
-    domain: 'data-analytics',
-    subcategory: 'Power BI',
-    title: 'HR Workforce Dashboard',
-    tagline: 'Headcount, attrition, and diversity metrics in Power BI.',
-    overview: 'A Power BI report tracking workforce composition, attrition trends, and hiring velocity.',
-    problem: 'HR leadership needed a single, visual view of workforce health metrics.',
-    solution: 'Built a multi-page report with attrition trend analysis and department-level filters.',
-    workflow: ['Modeled employee, department, and attrition data', 'Built trend and composition visuals', 'Added interactive department filters'],
-    techStack: ['Power BI', 'DAX'],
-    features: ['Attrition trend analysis', 'Workforce composition breakdown', 'Department-level filtering'],
-    challenges: ['Visualizing sensitive HR data responsibly and clearly'],
-    results: ['Clear, filterable single source of workforce truth'],
-    meta: [{ label: 'Focus', value: 'HR analytics' }],
-    github: 'https://github.com/panKhushi',
-    image: '/projects/placeholder.svg',
-  },
+  id: 'hr-dashboard-powerbi',
+  domain: 'data-analytics',
+  subcategory: 'Power BI',
+
+  title: 'HR Analytics Dashboard',
+  tagline: 'Interactive Power BI dashboard for workforce insights, attrition analysis, and diversity reporting.',
+
+  overview:
+    'Designed and developed an end-to-end HR Analytics Dashboard in Power BI to help HR teams monitor employee performance, workforce demographics, attrition, hiring trends, and diversity metrics. The dashboard enables data-driven workforce planning through interactive visualizations and drill-down capabilities.',
+
+  problem:
+    'HR managers relied on multiple Excel files to track employee data, making it difficult to identify attrition trends, monitor workforce diversity, and generate timely reports for decision-making.',
+
+  solution:
+    'Created a multi-page Power BI solution with a star-schema data model, optimized DAX calculations, interactive slicers, KPI cards, and drill-through reports. The dashboard provides real-time insights into workforce health, employee demographics, department performance, and hiring trends.',
+
+  workflow: [
+    'Imported and cleaned HR datasets using Power Query',
+    'Designed a star schema with Employee, Department, Date, and Performance tables',
+    'Created calculated columns and DAX measures',
+    'Built KPI cards for Headcount, Attrition Rate, Average Age, and Gender Ratio',
+    'Developed interactive charts with drill-through functionality',
+    'Published the report to Power BI Service'
+  ],
+
+  techStack: [
+    'Power BI',
+    'Power Query',
+    'DAX',
+    'Excel',
+    'Data Modeling'
+  ],
+
+  features: [
+    'Executive HR KPI dashboard',
+    'Employee headcount analysis',
+    'Monthly attrition trend',
+    'Department-wise workforce analysis',
+    'Gender diversity dashboard',
+    'Age group distribution',
+    'Hiring vs Attrition comparison',
+    'Interactive slicers and filters',
+    'Drill-through employee insights',
+    'Responsive report navigation'
+  ],
+
+  challenges: [
+    'Cleaning inconsistent employee records',
+    'Building efficient DAX measures for dynamic KPIs',
+    'Optimizing dashboard performance with large datasets',
+    'Presenting sensitive HR metrics while maintaining clarity'
+  ],
+
+  results: [
+    'Reduced manual HR reporting effort',
+    'Enabled faster workforce analysis through interactive dashboards',
+    'Improved visibility into attrition and hiring trends',
+    'Provided a centralized dashboard for HR decision-making'
+  ],
+
+  meta: [
+    { label: 'Category', value: 'HR Analytics' },
+    { label: 'Dashboard Pages', value: '5' },
+    { label: 'Visuals', value: '20+' },
+    { label: 'Data Source', value: 'Excel' }
+  ],
+
+  github: 'https://github.com/panKhushi/HR-Analytics-Dashboard',
+  image: '/projects/hr-dashboard.jpg'
+},
   {
     id: 'finance-dashboard-powerbi',
     domain: 'data-analytics',
