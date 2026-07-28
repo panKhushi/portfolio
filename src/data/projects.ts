@@ -113,28 +113,48 @@ export const projects: Project[] = [
     challenges: ['Designing constraints that catch bad data without rejecting valid edge cases'],
     results: ['Schema powers a real-time pipeline processing a 17-product catalog with INR pricing'],
     meta: [{ label: 'Indexes', value: '8' }, { label: 'BI Views', value: '4' }, { label: 'Engine', value: 'PostgreSQL' }],
-    github: 'https://github.com/panKhushi',
+    github: 'https://github.com/panKhushi/Bank-Report',
     image: '/projects/placeholder.svg',
     featured: true,
   },
   {
-    id: 'hospital-database',
-    domain: 'data-analytics',
-    subcategory: 'SQL',
-    title: 'Hospital Database',
-    tagline: 'A relational schema for patients, appointments, and billing.',
-    overview: 'A normalized hospital-management schema covering patients, doctors, appointments, and billing records.',
-    problem: 'A hypothetical clinic needed a schema that could support scheduling, billing, and reporting without redundancy.',
-    solution: 'Designed a normalized schema with foreign-key integrity and wrote reporting queries for common operational questions.',
-    workflow: ['Designed patient/doctor/appointment/billing tables', 'Enforced referential integrity with foreign keys', 'Wrote operational reporting queries'],
-    techStack: ['MySQL', 'SQL'],
-    features: ['Appointment scheduling schema', 'Billing and insurance tracking', 'Operational reporting queries'],
-    challenges: ['Modeling many-to-many doctor-department relationships cleanly'],
-    results: ['Fully normalized 3NF schema with 12 tables'],
-    meta: [{ label: 'Tables', value: '12' }, { label: 'Normal Form', value: '3NF' }],
-    github: 'https://github.com/panKhushi',
-    image: '/projects/placeholder.svg',
-  },
+  id: 'bank-report-database',
+  domain: 'data-analytics',
+  subcategory: 'Power BI',
+  title: 'Bank Loan Database',
+  tagline: 'A relational database for banking operations, customer accounts, and loan reporting.',
+  overview: 'Designed a normalized banking database to manage customer information, loan applications, transactions, and financial reporting for efficient data analysis.',
+  problem: 'A banking system required a structured database capable of managing customer records, loan details, account information, and transactions while ensuring data integrity and supporting analytical reporting.',
+  solution: 'Developed a normalized relational database with foreign key constraints and created SQL queries to generate business reports, customer insights, and loan performance metrics.',
+  workflow: [
+    'Designed customer, account, loan, and transaction tables',
+    'Implemented primary and foreign key relationships',
+    'Normalized the database to Third Normal Form (3NF)',
+    'Created SQL queries for financial and operational reporting'
+  ],
+  techStack: ['MySQL', 'SQL'],
+  features: [
+    'Customer and account management',
+    'Loan application and repayment tracking',
+    'Transaction history management',
+    'Financial reporting and analytics',
+    'Normalized relational database design'
+  ],
+  challenges: [
+    'Maintaining data integrity across multiple banking entities',
+    'Designing efficient relationships for reporting and analysis'
+  ],
+  results: [
+    'Developed a fully normalized 3NF database with optimized relationships',
+    'Improved reporting efficiency through structured SQL queries'
+  ],
+  meta: [
+    { label: 'Database', value: 'MySQL' },
+    { label: 'Normal Form', value: '3NF' }
+  ],
+  github: 'https://github.com/panKhushi/Bank-Report',
+  image: '/projects/bank-report.jpeg',
+},
   {
     id: 'inventory-database',
     domain: 'data-analytics',
@@ -192,7 +212,7 @@ export const projects: Project[] = [
   {
   id: 'blinkit-powerbi-dashboard',
   domain: 'data-analytics',
-  subcategory: 'Business Intelligence',
+  subcategory: 'Power BI',
   title: 'Blinkit Sales & Performance Dashboard',
   tagline: 'Interactive Power BI dashboard for sales, customer, and delivery insights.',
 
